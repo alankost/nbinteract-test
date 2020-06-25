@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 
 
-<title>modeprofiles</title>
+<title>light</title>
 
 <style type="text/css">
     /*!
@@ -13112,14 +13112,102 @@ div#notebook {
 
 
 
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">&lt;script&gt;</span>
+<span class="s1">  function code_toggle() {</span>
+<span class="s1">    if (code_shown){</span>
+<span class="s1">      $(&#39;div.input&#39;).hide(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Show Code&#39;)</span>
+<span class="s1">    } else {</span>
+<span class="s1">      $(&#39;div.input&#39;).show(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)</span>
+<span class="s1">    }</span>
+<span class="s1">    code_shown = !code_shown</span>
+<span class="s1">  }</span>
+
+<span class="s1">  $( document ).ready(function(){</span>
+<span class="s1">    code_shown=false;</span>
+<span class="s1">    $(&#39;div.input&#39;).hide()</span>
+<span class="s1">  });</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Show Code&quot;&gt;&lt;/form&gt;</span>
+<span class="s1">.&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<script>
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Show Code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Show Code"></form>
+.
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>When light enters a material with a refractinve index n, the wavelength shortens and become lambda/n. When a light enters an optical waveguide, its wavelength is shortended by a factor called the effective index. The effective index has a value that is intermediate between the values for the refractive index of the core and cladding materials.</p>
-<p>The simulation below shows the optical intensity profile for light in a slab waveguide with a core index of 3.5 and cladding index of 3.2. It is tempting to guess that the effective index is the average refractive index experienced by the light.
-Use the slider to vary the waveguide width.</p>
-<p>Does the effective index change as you would expect if it were an average index"?
-Is it quantitatively equal to the weighted index?
-If the effective index is not the weighted average, can you think of a reason why not?</p>
+<h1 id="What-is-light?">What is light?<a class="anchor-link" href="#What-is-light?">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A baseball is a particle and the thing that surfers look for in the ocean is a wave. In addition to giving examples, scientists like to to describe the properties of an object that make it a particle or a wave. When we do this, it turns out that many things, like light, act like both a paricle and a wave.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Light-Acts-Like-a-Particle">Light Acts Like a Particle<a class="anchor-link" href="#Light-Acts-Like-a-Particle">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When scientists says that light acts like a particle, they mean that when we detect the light it arrives at the detector in chunks we call photons. This is pictured in the anmiation below where photons are created in an emitter (an example would be a light bulb) and then travel to a photodetector that registers them when they arrive.</p>
 
 </div>
 </div>
@@ -13127,68 +13215,410 @@ If the effective index is not the weighted average, can you think of a reason wh
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># nbi:hide_in</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span> <span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1000&quot; height=&quot;100&quot;&gt;</span>
+
+<span class="s2">&lt;rect x=&quot;0&quot; y=&quot;0&quot; width=&quot;150&quot; height=&quot;100&quot; stroke=&quot;black&quot; fill=blue stroke-width=&quot;1&quot; /&gt;</span>
+<span class="s2">&lt;rect x=&quot;150&quot; y=&quot;0&quot; width=&quot;600&quot; height=&quot;100&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot; /&gt;</span>
+<span class="s2">&lt;rect x=&quot;750&quot; y=&quot;0&quot; width=&quot;150&quot; height=&quot;100&quot; stroke=&quot;black&quot; fill=blue stroke-width=&quot;1&quot; /&gt;</span>
+<span class="s2">  &lt;text x=&quot;30&quot; y=&quot;30&quot; style=&quot;font-family: Arial;</span>
+<span class="s2">            font-size: 20; fill: white;&quot;&gt; Emitter</span>
+<span class="s2">  &lt;/text&gt;</span>
+<span class="s2">  &lt;text x=&quot;760&quot; y=&quot;30&quot; style=&quot;font-family: Arial;</span>
+<span class="s2">            font-size: 20; fill: white;&quot;&gt; Photodetector</span>
+<span class="s2">  &lt;/text&gt;</span>
+<span class="s2">    &lt;circle cx=&quot;-15&quot; cy=&quot;50&quot; r=&quot;15&quot; fill=&quot;orange&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot;&gt;</span>
+<span class="s2">        &lt;animate attributeName=&quot;cx&quot; from=&quot;50&quot; to=&quot;815&quot; dur=&quot;5s&quot; repeatCount=&quot;indefinite&quot; /&gt;</span>
+<span class="s2">        &lt;/circle&gt;</span>
+<span class="s2">    &lt;circle cx=&quot;-15&quot; cy=&quot;50&quot; r=&quot;15&quot; fill=&quot;Green&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot;&gt;</span>
+<span class="s2">        &lt;animate attributeName=&quot;cx&quot; from=&quot;50&quot; to=&quot;815&quot; begin=&quot;1s&quot; dur=&quot;5s&quot; repeatCount=&quot;indefinite&quot; /&gt;</span>
+<span class="s2">        &lt;/circle&gt;</span>
+<span class="s2">    &lt;circle cx=&quot;-15&quot; cy=&quot;50&quot; r=&quot;15&quot; fill=&quot;orange&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot;&gt;</span>
+<span class="s2">        &lt;animate attributeName=&quot;cx&quot; from=&quot;50&quot; to=&quot;815&quot; begin=&quot;2s&quot; dur=&quot;5s&quot; repeatCount=&quot;indefinite&quot; /&gt;</span>
+<span class="s2">        &lt;/circle&gt;</span>
+<span class="s2">    &lt;circle cx=&quot;-15&quot; cy=&quot;50&quot; r=&quot;15&quot; fill=&quot;orange&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot;&gt;</span>
+<span class="s2">        &lt;animate attributeName=&quot;cx&quot; from=&quot;50&quot; to=&quot;815&quot; begin=&quot;3s&quot; dur=&quot;5s&quot; repeatCount=&quot;indefinite&quot; /&gt;</span>
+<span class="s2">        &lt;/circle&gt;</span>
+<span class="s2">    &lt;circle cx=&quot;-15&quot; cy=&quot;50&quot; r=&quot;15&quot; fill=&quot;orange&quot; stroke=&quot;black&quot; stroke-width=&quot;1&quot;&gt;</span>
+<span class="s2">        &lt;animate attributeName=&quot;cx&quot; from=&quot;50&quot; to=&quot;815&quot; begin=&quot;4s&quot; dur=&quot;5s&quot; repeatCount=&quot;indefinite&quot; /&gt;</span>
+<span class="s2">        &lt;/circle&gt;</span>
+<span class="s2">&lt;/svg&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="100">
+
+<rect x="0" y="0" width="150" height="100" stroke="black" fill=blue stroke-width="1" />
+<rect x="150" y="0" width="600" height="100" stroke="black" stroke-width="1" />
+<rect x="750" y="0" width="150" height="100" stroke="black" fill=blue stroke-width="1" />
+  <text x="30" y="30" style="font-family: Arial;
+            font-size: 20; fill: white;"> Emitter
+  </text>
+  <text x="760" y="30" style="font-family: Arial;
+            font-size: 20; fill: white;"> Photodetector
+  </text>
+    <circle cx="-15" cy="50" r="15" fill="orange" stroke="black" stroke-width="1">
+        <animate attributeName="cx" from="50" to="815" dur="5s" repeatCount="indefinite" />
+        </circle>
+    <circle cx="-15" cy="50" r="15" fill="Green" stroke="black" stroke-width="1">
+        <animate attributeName="cx" from="50" to="815" begin="1s" dur="5s" repeatCount="indefinite" />
+        </circle>
+    <circle cx="-15" cy="50" r="15" fill="orange" stroke="black" stroke-width="1">
+        <animate attributeName="cx" from="50" to="815" begin="2s" dur="5s" repeatCount="indefinite" />
+        </circle>
+    <circle cx="-15" cy="50" r="15" fill="orange" stroke="black" stroke-width="1">
+        <animate attributeName="cx" from="50" to="815" begin="3s" dur="5s" repeatCount="indefinite" />
+        </circle>
+    <circle cx="-15" cy="50" r="15" fill="orange" stroke="black" stroke-width="1">
+        <animate attributeName="cx" from="50" to="815" begin="4s" dur="5s" repeatCount="indefinite" />
+        </circle>
+</svg>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Light-Acts-Like-a-Wave">Light Acts Like a Wave<a class="anchor-link" href="#Light-Acts-Like-a-Wave">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When scientists say that light acts like a wave, they mean that in certain circumstances light exhibits an bevaior called "interference". Before we talk about intereference, lets see some waves and the mathematical functions that we use to describe them. The photo below is of surfers on a water wave at Peahi on Maui island in Hawaii. The photograph was taken by Jeff Rowley.</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span> 
+<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span> <span class="s2">&quot;http://i.imgur.com/U7AqICO.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<img src="http://i.imgur.com/U7AqICO.jpg" width="600" height="600"/>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Looking at the wave photo, we see a similarity between a particle like a baseball and a wave - they both move from place to place with a speed and direction. Water waves are larger and more spread out than most things we call particles. Although not waves are not always bigger than particles, unlike particles they do have a tendency to spread out.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Simple-Waves">Simple Waves<a class="anchor-link" href="#Simple-Waves">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the photo below we see a larger portion of a wave. Notice how the height of the water goes up; and down as we move along the wave.</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span> 
+<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span> <span class="s2">&quot;http://i.imgur.com/NBph4Ha.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<img src="http://i.imgur.com/NBph4Ha.jpg" width="600" height="600"/>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Scientists call something a simple wave if we can describe it using a simple trigonetric function. For example, a water wave is a simple wave if the heigt of the water at a given time is given by the expression;</p>
+$${\rm{Water}}\;{\rm{Height}} = A\sin \left( {2\pi \left( {\frac{x}{\lambda } - \nu t} \right) + \phi } \right)$$<p>where A is the maximum height of the wave, x is the position along the wave, $\lambda$ is the distance between wave peaks, t is time, $\nu$ is called the wave frequency and is the number of times per second the wave goes up and down at one position in the wave, and $\phi$ - called the phase adjusts the wave height so that it has the correct value at a given position and time. We will explore this function using the programming capabilities of the Jupyter Notebook. Let's get started with some simple examples of doing math with the Notebook.</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Addition, Subtration, Multiplication, and Division</span>
+<span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="mi">6</span><span class="o">/</span><span class="mi">4</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Rasing a number to a power</span>
+<span class="mi">3</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="mf">0.5</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(9, 1.4142135623730951)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Including text in an answer</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;two plus two =&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;The answer is&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>two plus two = 4
+The answer is 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A simple function plot</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">FloatSlider</span><span class="p">,</span> <span class="n">ToggleButtons</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">HBox</span><span class="p">,</span> <span class="n">VBox</span><span class="p">,</span> <span class="n">Label</span>
-<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">7</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now lets explore a simple wave using a plot that has interactive sliders to let us control the wave properties. This code also shows you how to control</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">FloatSlider</span><span class="p">,</span> <span class="n">ToggleButtons</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
 
-<span class="c1">#core half thinkness in microns</span>
-<span class="n">gw_slider</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Guide Width&#39;</span><span class="p">,</span> <span class="nb">min</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="n">amplitude</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">20.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+<span class="n">wavelength</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1000.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
+<span class="n">phase</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">360</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">function</span> <span class="o">=</span> <span class="n">ToggleButtons</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;trig function&#39;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;sin&#39;</span><span class="p">,</span> <span class="s1">&#39;cos&#39;</span><span class="p">,</span> <span class="s1">&#39;tan&#39;</span><span class="p">])</span>
 
-<span class="c1">#vacuum wavelength in microns</span>
-<span class="n">wavelength</span><span class="o">=</span><span class="mf">1.55</span>
-<span class="c1">#refractive index of core</span>
-<span class="n">n1</span><span class="o">=</span><span class="mf">3.5</span>
-<span class="c1">#refractive inex of cladding</span>
-<span class="n">n0</span><span class="o">=</span><span class="mf">3.2</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2000</span><span class="p">,</span><span class="mi">2001</span><span class="p">)</span>
 
-<span class="nd">@interact</span><span class="p">(</span><span class="n">d</span><span class="o">=</span><span class="n">gw_slider</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
-    <span class="k">global</span> <span class="n">a</span>
-    <span class="n">a</span><span class="o">=</span><span class="n">d</span><span class="o">/</span><span class="mi">2</span>
-    <span class="k">global</span> <span class="n">Ka0</span>
-    <span class="k">global</span> <span class="n">Ga0</span>
-    <span class="k">global</span> <span class="n">x0</span>
-    <span class="k">global</span> <span class="n">x1</span>
-    <span class="k">global</span> <span class="n">x2</span>
-    <span class="c1">#Finding the 1st Even Mode</span>
-    <span class="n">V</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">a</span><span class="o">/</span><span class="n">wavelength</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">n1</span><span class="o">**</span><span class="mf">2.0</span><span class="o">-</span><span class="n">n0</span><span class="o">**</span><span class="mf">2.0</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-    <span class="n">Ka_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">80</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mf">100.0</span>
-    <span class="n">Diff_arr</span> <span class="o">=</span> <span class="p">(</span><span class="n">n0</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">n1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">Ka_arr</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">Ka_arr</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="n">V</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">Ka_arr</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-    <span class="n">Diff_arr</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="n">Diff_arr</span><span class="p">)</span>
-    <span class="n">Ka0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">Diff_arr</span><span class="p">)</span><span class="o">/</span><span class="mf">100.0</span><span class="o">+</span><span class="mf">1.0</span>
-    <span class="n">Ga0</span> <span class="o">=</span> <span class="p">(</span><span class="n">n0</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">n1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">Ka_arr</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">Diff_arr</span><span class="p">)]</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">Ka_arr</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">Diff_arr</span><span class="p">)])</span>
-    <span class="n">Beta0</span> <span class="o">=</span> <span class="p">((</span><span class="n">n1</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">wavelength</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="p">(</span><span class="n">Ka0</span><span class="o">/</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>  
-    <span class="n">x0</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="n">a</span><span class="p">,</span><span class="mi">151</span><span class="p">)</span> 
-    <span class="n">x1</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">a</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="mi">151</span><span class="p">)</span> 
-    <span class="n">x2</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">151</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Ka0</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">((</span><span class="n">a</span><span class="o">+</span><span class="n">x0</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Ga0</span><span class="o">/</span><span class="n">a</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span> 
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Ka0</span><span class="o">*</span><span class="n">x1</span><span class="o">/</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span> 
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Ka0</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">((</span><span class="n">a</span><span class="o">-</span><span class="n">x2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Ga0</span><span class="o">/</span><span class="n">a</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Position (micron)&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Normalized Ey(x)&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">vlines</span><span class="p">([</span><span class="o">-</span><span class="n">a</span><span class="p">,</span><span class="n">a</span><span class="p">],</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
-
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="s1">&#39;ncore = &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">n0</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="s1">&#39;nclad = &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span>
-    <span class="n">effn0</span> <span class="o">=</span> <span class="n">Beta0</span><span class="o">*</span><span class="n">wavelength</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="s1">&#39;Effective Index = &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">effn0</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
-    <span class="n">conf</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Ka0</span><span class="o">*</span><span class="n">x1</span><span class="o">/</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Ka0</span><span class="o">*</span><span class="n">x1</span><span class="o">/</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
-                <span class="o">+</span> <span class="mi">2</span><span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Ka0</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">((</span><span class="n">a</span><span class="o">-</span><span class="n">x2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Ga0</span><span class="o">/</span><span class="n">a</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="n">a</span><span class="p">)))</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span><span class="mf">0.7</span><span class="p">,</span><span class="s1">&#39;Fraction of Light Confined to Core = &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
-    <span class="n">nave</span> <span class="o">=</span> <span class="n">n1</span><span class="o">*</span><span class="n">conf</span> <span class="o">+</span> <span class="n">n0</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">conf</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="s1">&#39;Weigthed Average of Index = &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">nave</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
+<span class="nd">@interact</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="n">amplitude</span><span class="p">,</span> <span class="n">Lambda</span><span class="o">=</span><span class="n">wavelength</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="n">phase</span><span class="p">,</span> <span class="n">f</span><span class="o">=</span><span class="n">function</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">Lambda</span><span class="p">,</span><span class="n">phi</span><span class="p">,</span><span class="n">f</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">f</span> <span class="o">==</span><span class="s1">&#39;sin&#39;</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">Lambda</span><span class="o">+</span><span class="n">phi</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">f</span> <span class="o">==</span> <span class="s1">&#39;cos&#39;</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">Lambda</span><span class="o">+</span><span class="n">phi</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A</span> <span class="o">*</span> <span class="n">tan</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">Lambda</span><span class="o">+</span><span class="n">phi</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">360</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Position (feet)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">2000</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Wave Height (feet)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">20.1</span><span class="p">,</span><span class="mf">20.1</span><span class="p">);</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13210,6 +13640,281 @@ If the effective index is not the weighted average, can you think of a reason wh
       Loading widgets...
     </button>
   </div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Light-Waves">Light Waves<a class="anchor-link" href="#Light-Waves">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So water height is the thing that is changing in a water wave. What is the thing chaning in a light wave? It is the size of electric and magenetic fields as pictured just below. Note that the wavelength of the light wave determines what color we see. Blue light has a wavelength of about 450 nanometers (a nanometer is one billionth of a meter), green light about 550 nanometers, and red light about 640 nanometers. The bigger the amplitude of the light wave, the brighter the light.</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span> 
+<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span> <span class="s2">&quot;http://i.imgur.com/uOWvGP6.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<img src="http://i.imgur.com/uOWvGP6.jpg" width="600" height="600"/>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Wave-Interference">Wave Interference<a class="anchor-link" href="#Wave-Interference">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A special properties of waves is that they can add to each other or subtract from each other when they overlap. See if you can spot this happening in the picture of two overlapping waver waves below.</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span> 
+<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span> <span class="s2">&quot;http://i.imgur.com/oFLtlFl.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<img src="http://i.imgur.com/oFLtlFl.jpg" width="600" height="600"/>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The photo on below is the interference pattern that was created on a screen by overlapping green light from two slits.</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="k">import</span> <span class="n">HTML</span> 
+<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span> <span class="s2">&quot;http://i.imgur.com/ftfeB3t.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<img src="http://i.imgur.com/ftfeB3t.jpg" width="600" height="600"/>
+</div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let's add two waves mathematically and see how they add and subtract as we change their properties. Interfering light and sound waves can form all for the paterns that we see in this simulation.</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">FloatSlider</span><span class="p">,</span> <span class="n">ToggleButtons</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">})</span>
+
+<span class="n">amplitude1</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">20.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+<span class="n">wavelength1</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1000.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
+<span class="n">phase1</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">360</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">amplitude2</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">20.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+<span class="n">wavelength2</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1000.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
+<span class="n">phase2</span> <span class="o">=</span> <span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">360</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2000</span><span class="p">,</span><span class="mi">2001</span><span class="p">)</span>
+
+<span class="nd">@interact</span><span class="p">(</span><span class="n">A1</span><span class="o">=</span><span class="n">amplitude1</span><span class="p">,</span> <span class="n">lambda1</span><span class="o">=</span><span class="n">wavelength1</span><span class="p">,</span> <span class="n">phi1</span><span class="o">=</span><span class="n">phase1</span><span class="p">,</span> <span class="n">A2</span><span class="o">=</span><span class="n">amplitude2</span><span class="p">,</span> <span class="n">lambda2</span><span class="o">=</span><span class="n">wavelength2</span><span class="p">,</span> <span class="n">phi2</span><span class="o">=</span><span class="n">phase2</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">A1</span><span class="p">,</span><span class="n">lambda1</span><span class="p">,</span><span class="n">phi1</span><span class="p">,</span><span class="n">A2</span><span class="p">,</span><span class="n">lambda2</span><span class="p">,</span><span class="n">phi2</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">lambda1</span><span class="o">+</span><span class="n">phi1</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">)</span><span class="o">+</span><span class="mi">20</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;wave 1&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A2</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">lambda2</span><span class="o">+</span><span class="n">phi2</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;wave 2&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">lambda1</span><span class="o">+</span><span class="n">phi1</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">)</span> <span class="o">+</span>
+             <span class="n">A2</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="o">/</span><span class="n">lambda2</span><span class="o">+</span><span class="n">phi2</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">)</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;wave 1 + wave 2&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Position (feet)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">3200</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Wave Height (feet)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">40.1</span><span class="p">,</span><span class="mf">40.1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+  <div class="output_subarea output_widget_view ">
+    <button class="js-nbinteract-widget">
+      Loading widgets...
+    </button>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+  </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Bonus-Video">Bonus Video<a class="anchor-link" href="#Bonus-Video">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Finally, you may like to take a look at this Youtube video. It contains demonstrations of wave interference and has some funny interviews with people about light.</p>
+
+</div>
+</div>
+</div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">display</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
+<span class="n">vid</span> <span class="o">=</span> <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s2">&quot;Iuv6hY6zsd0&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">vid</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_html rendered_html output_subarea ">
+
+        <iframe
+            width="400"
+            height="300"
+            src="https://www.youtube.com/embed/Iuv6hY6zsd0"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
 
 </div>
 
